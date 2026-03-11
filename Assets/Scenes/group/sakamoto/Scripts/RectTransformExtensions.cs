@@ -6,19 +6,39 @@ public static class RectTransformExtensions
     {
         var rect1Corners = new Vector3[4];
         var rect2Corners = new Vector3[4];
+        Vector3 rect1Rotation = rect1.eulerAngles;
+        Vector3 rect2Rotation = rect2.eulerAngles;
 
         rect1.GetWorldCorners(rect1Corners);
         rect2.GetWorldCorners(rect2Corners);
 
-        for (var i = 0; i < 4; i++)
+        //Šp“x·‚ªˆê’èˆÈ“à‚Å‚ ‚ê‚Î”»’èˆ—
+        if (rect1Rotation.z >= 180.0f)
         {
-            if (IsPointInsideRect(rect1Corners[i], rect2Corners))
+            rect1Rotation.z = 360.0f - rect1Rotation.z; 
+        }
+        if(rect2Rotation.z >= 180.0f)
+        {
+            rect2Rotation.z = 360.0f - rect2Rotation.z;
+        }
+
+        float angleDifference = rect2Rotation.z - rect1Rotation.z;
+
+        Debug.Log("Šp“x" + angleDifference);
+
+        if (angleDifference <= 45.0f ||
+            angleDifference >= 135.0f)
+        {
+            for (var i = 0; i < 4; i++)
             {
-                return true;
-            }
-            if (IsPointInsideRect(rect2Corners[i], rect1Corners))
-            {
-                return true;
+                if (IsPointInsideRect(rect1Corners[i], rect2Corners))
+                {
+                    return true;
+                }
+                if (IsPointInsideRect(rect2Corners[i], rect1Corners))
+                {
+                    return true;
+                }
             }
         }
 

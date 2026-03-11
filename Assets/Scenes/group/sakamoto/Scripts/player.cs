@@ -4,7 +4,7 @@ using UnityEngine;
 public class player : MonoBehaviour
 {
     [SerializeField] private RectTransform rectTransform;
-    [SerializeField] private RectTransform targetRectTransform;
+    [SerializeField] private RectTransform[] targetRectTransform;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,9 +38,12 @@ public class player : MonoBehaviour
         transform.position = transform.position + (addPos * Time.deltaTime);
     
         //èdÇ»Ç¡ÇƒÇ¢ÇÈÇ©
-        if(rectTransform.IsOverLapping(targetRectTransform))
+        for (int i = 0; i < targetRectTransform.Length; i++)
         {
-            Debug.Log("Ç†ÇΩÇ¡ÇΩ");
+            if (rectTransform.IsOverLapping(targetRectTransform[i]))
+            {
+                Debug.Log("Ç†ÇΩÇ¡ÇΩ");
+            }
         }
     }
 

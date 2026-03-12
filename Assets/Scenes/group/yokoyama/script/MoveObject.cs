@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
 
-    private int stage = 1;
+    private int stage = 0;
     private float moveDistance = 3.5f;
     private bool canMove=false;
     private int STAGE_MAX = 0;
@@ -18,7 +18,7 @@ public class MoveObject : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        stage = 1;
+        stage = 0;
         moveDistance = 3.5f;
         canMove = false;
 
@@ -64,7 +64,11 @@ public class MoveObject : MonoBehaviour
 
 
         transform.position = pos;
-       
+
+        for (int i = 0; i < NextStage.Length; i++)
+        {
+            Debug.Log($"nextStage[{i}].GetIsNextStage() = {NextStage[i].GetIsNextStage()}");
+           }
     }
 
 }

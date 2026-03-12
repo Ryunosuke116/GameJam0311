@@ -6,15 +6,18 @@ public class MoveObject : MonoBehaviour
 {
 
     private int stage = 1;
+    private float moveDistance = 3.5f;
     private bool canMove=false;
 
-
-    const float moveSpeed = -0.01f;
-
+    const float MOVE_SPEED = -0.01f;
+    const float MOVE_DIST = -14.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        stage = 1;
+        moveDistance = 3.5f;
         canMove = false;
+       
     }
 
     // Update is called once per frame
@@ -22,31 +25,51 @@ public class MoveObject : MonoBehaviour
     {
 
         Vector2 pos = transform.position;
-        pos.y = -1;
+        pos.y = -0.85f;
 
-        if (stage >= 1 && stage < 3 && Input.GetKey(KeyCode.A))
+        if (canMove ==false && Input.GetKeyDown(KeyCode.A))
         {
+
             canMove = true;
+            moveDistance += MOVE_DIST;
+           
         }
 
         if (canMove == true)
         {
 
-            pos.x += moveSpeed;
+            pos.x += MOVE_SPEED;
 
         }
 
-        if (stage == 1 && canMove == true && pos.x <= -11f)
+        if (moveDistance > pos.x)  
         {
-            stage = 2;
-            pos.x = -11f;
+
+            switch (stage)
+            {
+                case 1:
+
+                    stage = 2;
+                   
+                    break;
+
+                case 2:
+
+                    stage = 3;
+                    
+                    break;
+
+                case 3:
+
+                    stage = 4;
+
+                    break;
+
+            }
+
+            pos.x = moveDistance;
             canMove = false;
-        }
-        else if (stage == 2 && canMove == true && pos.x <= -25f)
-        {
-            stage = 3;
-            pos.x = -25f;
-            canMove = false;
+
         }
 
 

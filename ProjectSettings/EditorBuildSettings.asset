@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/group/oba/Sceces/Ranking.unity
+    path: Assets/Scenes/group/oba/Scenes/Ranking.unity
     guid: e21fce2118519c54abb529b1929de87a
   - enabled: 1
-    path: Assets/Scenes/group/oba/Sceces/Result.unity
+    path: Assets/Scenes/group/oba/Scenes/Result.unity
     guid: 6fcb6b01590d0a1409134baf41b13839
   - enabled: 1
-    path: Assets/Scenes/group/oba/Sceces/Title.unity
+    path: Assets/Scenes/group/oba/Scenes/Title.unity
     guid: 3f7d455f0102fec4b9e1bc117cccec1c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

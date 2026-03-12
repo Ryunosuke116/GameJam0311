@@ -25,11 +25,11 @@ public class SceneTransitionButton : MonoBehaviour
     [Obsolete("Obsolete")]
     private void DoTransition()
     {
-        //if (sceneName == "GameScene")
+        if (sceneName == "Game")
         {
             if (Object.FindObjectOfType<ScoreManager>() == null) Instantiate(scoreManagerPrefab, Vector3.zero, Quaternion.identity);
         }
-        if (sceneName != "Result")
+        if (sceneName == "Title")
         {
             if (Object.FindObjectOfType<ScoreManager>() != null) Destroy(Object.FindObjectOfType<ScoreManager>()); 
         }

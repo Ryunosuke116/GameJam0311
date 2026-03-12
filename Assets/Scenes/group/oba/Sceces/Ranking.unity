@@ -266,6 +266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneTransitionButton
   sceneName: Title
+  scoreManagerPrefab: {fileID: 885076007885156330, guid: b2c06b2c8ba52a54892c81f3884146c4, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

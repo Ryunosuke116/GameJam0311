@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -42,20 +43,38 @@ public class RankManager : MonoBehaviour
     /// <param name="newScore"></param>
     private void SaveRanking(int newScore = 0)
     {
-        var i = 0;
-        while (_rankingList[i][1].Length != 0)
-        {
-            i++;
-        }
-        _rankingList[i][0] = i.ToString();          // 順位の書き込み
-        _rankingList[i][1] =  newScore.ToString();  // スコアの書き込み
-                
+        var size = _rankingList.Count;
+        _rankingList[ size - 1][1] = newScore.ToString();  // スコアの書き込み
+        RankingDataSort();
         WriteRankingData();
     }
 
     void RankingDataSort()
     {
-        var swap = _rankingList[0][0].ToIntArray();
+        int[] swap = new int[_rankingList.Count];
+        var size = 0;
+        for (var i = 0; i < _rankingList.Count - 2; i++)
+        {
+            if(_rankingList[i+1][1] == "") _rankingList[i+1][1] = "0";
+            size++;
+            // Debug.Log(":"+int.Parse(_rankingList[i+1][1]));
+            swap[i] = int.Parse(_rankingList[i+1][1]);
+        }
+        Debug.Log("size:"+size);
+        for (var i = 0; i < size; i++)
+        {
+            Debug.Log(":"+swap[i]);
+        }
+        Debug.Log("Sort");
+        System.Array.Sort(swap);
+        for (var i = 0; i < size; i++)
+        {
+            Debug.Log(":"+swap[i]);
+        }
+        for (var i = 0; i < size; i++)
+        {
+            //_rankingList[i+1][1] = swap[i].ToString();
+        }
         
     }
     

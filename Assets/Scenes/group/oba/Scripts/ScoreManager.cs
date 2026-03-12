@@ -21,7 +21,7 @@ public class ScoreManager : MonoBehaviour
     /// スコアの加算
     /// </summary>
     /// <param name="score"> 加算される値 </param>
-    private void AddScore(int score)
+    public void AddScore(int score)
     {
         Score += score;
     }

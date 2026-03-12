@@ -799,6 +799,7 @@ GameObject:
   m_Component:
   - component: {fileID: 404463586}
   - component: {fileID: 404463587}
+  - component: {fileID: 404463588}
   m_Layer: 0
   m_Name: Stage1
   m_TagString: Untagged
@@ -883,6 +884,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &404463588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404463585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6cfa2fdbe56d84eab7103cc3b9de1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
 --- !u!1 &415663468
 GameObject:
   m_ObjectHideFlags: 0
@@ -2353,6 +2366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413475440}
   - component: {fileID: 1413475441}
+  - component: {fileID: 1413475442}
   m_Layer: 0
   m_Name: Stage2
   m_TagString: Untagged
@@ -2438,6 +2452,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1413475442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1413475439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6cfa2fdbe56d84eab7103cc3b9de1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::checkNextStage
 --- !u!1 &1472735068
 GameObject:
   m_ObjectHideFlags: 0
@@ -3127,6 +3153,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2045965952}
   - component: {fileID: 2045965953}
+  - component: {fileID: 2045965954}
   m_Layer: 0
   m_Name: Stage3
   m_TagString: Untagged
@@ -3213,6 +3240,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &2045965954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045965951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b6cfa2fdbe56d84eab7103cc3b9de1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::checkNextStage
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

@@ -8,16 +8,23 @@ public class MoveObject : MonoBehaviour
     private int stage = 1;
     private float moveDistance = 3.5f;
     private bool canMove=false;
+    private int STAGE_MAX = 0;
 
     const float MOVE_SPEED = -0.01f;
     const float MOVE_DIST = -14.5f;
+
+    private checkNextStage[] NextStage;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         stage = 1;
         moveDistance = 3.5f;
         canMove = false;
-       
+
+        NextStage = gameObject.GetComponentsInChildren<checkNextStage>();
+        STAGE_MAX = gameObject.transform.childCount - 1;
+
     }
 
     // Update is called once per frame
@@ -27,14 +34,17 @@ public class MoveObject : MonoBehaviour
         Vector2 pos = transform.position;
         pos.y = -0.85f;
 
-        if (canMove ==false && Input.GetKeyDown(KeyCode.A))
+        // 次のステージに進むことができる場合、オブジェクトを左に移動させる
+        if (stage < STAGE_MAX && canMove == false && NextStage[stage].GetIsNextStage() == true)
         {
 
             canMove = true;
             moveDistance += MOVE_DIST;
+            stage++;
            
         }
 
+        // オブジェクトが移動できる場合、オブジェクトを左に移動させる
         if (canMove == true)
         {
 
@@ -42,39 +52,19 @@ public class MoveObject : MonoBehaviour
 
         }
 
+        // 一定の移動距離を超えた場合、オブジェクトの位置を移動距離に固定し、移動できないようにする
         if (moveDistance > pos.x)  
         {
 
-            switch (stage)
-            {
-                case 1:
-
-                    stage = 2;
-                   
-                    break;
-
-                case 2:
-
-                    stage = 3;
-                    
-                    break;
-
-                case 3:
-
-                    stage = 4;
-
-                    break;
-
-            }
-
             pos.x = moveDistance;
             canMove = false;
+            
 
         }
 
 
         transform.position = pos;
-
+       
     }
 
 }

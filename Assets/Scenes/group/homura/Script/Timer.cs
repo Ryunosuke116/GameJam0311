@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 
-    [SerializeField] private int startSceconds = 90;
+    [SerializeField] private float startSceconds = 90;
     [SerializeField] private bool useUnscaledTime = false;
     [SerializeField] private TMP_Text timerText;
 
@@ -38,8 +38,10 @@ public class Timer : MonoBehaviour {
 
     private void UpdateText(float seconds)
     {
-        float m = seconds / 60;
-        float s = seconds % 60;
+        seconds = Mathf.Max(0f, seconds);
+
+        float m = Mathf.FloorToInt(seconds / 60);
+        float s = Mathf.FloorToInt(seconds % 60);
         timerText.text = $"{m:00}:{s:00}";
     }
 }

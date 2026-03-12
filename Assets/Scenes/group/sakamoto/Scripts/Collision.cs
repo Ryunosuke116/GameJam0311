@@ -1,15 +1,24 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
-    [SerializeField] private RectTransform rectTransform;
-    [SerializeField] private RectTransform[] targetRectTransform;
+    [SerializeField] 
+    private RectTransform rectTransform;
 
+    [SerializeField] 
+    private RectTransform[] targetRectTransform;
+
+    [SerializeField]
+    private GameObject productShelf;
+
+    private RandamRotation[] targetItems;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        targetItems = productShelf.GetComponentsInChildren<RandamRotation>();
     }
 
     // Update is called once per frame
@@ -21,12 +30,8 @@ public class Collision : MonoBehaviour
             if (rectTransform.IsOverLapping(targetRectTransform[i]))
             {
                 Debug.Log("‚ ‚½‚Á‚½");
+                targetItems[i].IsSticker = true;
             }
         }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("“–‚½‚Á‚½");
     }
 }

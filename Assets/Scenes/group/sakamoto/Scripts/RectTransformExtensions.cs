@@ -26,8 +26,8 @@ public static class RectTransformExtensions
 
         Debug.Log("Šp“x" + angleDifference);
 
-        if (angleDifference <= 45.0f ||
-            angleDifference >= 135.0f)
+        if (angleDifference <= 30.0f ||
+            angleDifference >= 150.0f)
         {
             for (var i = 0; i < 4; i++)
             {

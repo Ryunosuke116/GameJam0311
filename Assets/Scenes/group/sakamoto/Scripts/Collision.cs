@@ -15,6 +15,15 @@ public class Collision : MonoBehaviour
 
     private RandamRotation[] targetItems;
 
+    public bool GetTargetItems(int num)
+    {
+        return targetItems[num].IsSticker;
+    }
+
+    public int GetTargetItemsLength()
+    {
+        return targetItems.Length;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -29,6 +38,7 @@ public class Collision : MonoBehaviour
         {
             if (rectTransform.IsOverLapping(targetRectTransform[i]))
             {
+                
                 Debug.Log("‚ ‚½‚Á‚½");
                 targetItems[i].IsSticker = true;
             }

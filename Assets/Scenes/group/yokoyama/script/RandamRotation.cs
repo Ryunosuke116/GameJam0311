@@ -6,6 +6,13 @@ public class RandamRotation : MonoBehaviour
     private bool isPasted = false;
     private bool isSticker = false;
 
+    public bool IsSticker
+    {
+        get { return isSticker; }
+        set { isSticker = value; }
+    }
+
+
     const float MOVE_SPEED = 0.01f;
     const float MOVE_DIST = 8f;
 

@@ -16,16 +16,27 @@ public class RandamRotation : MonoBehaviour
     const float MOVE_SPEED = 0.01f;
     const float MOVE_DIST = 8f;
 
+ 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         const float rotationMax = 360.0f;
         const float rotationMin = 0.0f;
 
+        const float SPAWN_POS_X_MIN = -2.0f;
+        const float SPAWN_POS_X_MAX = 2.0f;
+        const float SPAWN_POS_Y_MIN = -1.5f;
+        const float SPAWN_POS_Y_MAX = 1.5f;
+
         // ランダムな回転角度を生成
         Vector3 rotation;
         rotation.z = Random.Range(rotationMin, rotationMax);
        transform.localEulerAngles = new Vector3(0, 0, rotation.z);
+
+        Vector2 pos = transform.position;
+        pos.x = Random.Range(SPAWN_POS_X_MIN, SPAWN_POS_X_MAX);
+        pos.y = Random.Range(SPAWN_POS_Y_MIN, SPAWN_POS_Y_MAX);
+        transform.localPosition = pos;
 
         isSticker = false;
     }

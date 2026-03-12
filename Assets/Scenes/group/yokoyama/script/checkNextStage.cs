@@ -9,11 +9,13 @@ public class checkNextStage : MonoBehaviour
     private int childNum = 0;
 
     private RandamRotation[] randamRotations;
+    private int ProdactNum = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         randamRotations = gameObject.GetComponentsInChildren<RandamRotation>();
+        ProdactNum = gameObject.transform.childCount;
 
     }
 
@@ -32,7 +34,7 @@ public class checkNextStage : MonoBehaviour
             }
         }
         // childNumがrandamRotationsの数と等しい場合、isAllStickerPastedをtrueにする
-        if (childNum == randamRotations.Length)
+        if (childNum == ProdactNum)
         {
             isAllStickerPasted = true;
         }

@@ -709,7 +709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 278274377b359d643b869a597af965a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Time
-  startSceconds: 15
+  startSceconds: 90
   useUnscaledTime: 0
   timerText: {fileID: 883219486}
 --- !u!114 &883219485
@@ -944,6 +944,7 @@ GameObject:
   - component: {fileID: 982943589}
   - component: {fileID: 982943591}
   - component: {fileID: 982943590}
+  - component: {fileID: 982943592}
   m_Layer: 5
   m_Name: 10SecondsLater
   m_TagString: Untagged
@@ -977,13 +978,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982943588}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9245283, g: 0.23113208, b: 0.23113208, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1008,6 +1009,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 982943588}
   m_CullTransparentMesh: 1
+--- !u!114 &982943592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 982943588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c99a22f70506f34994476773e355cd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimeLimit
+  overlay: {fileID: 982943590}
+  maxTime: 90
+  useUnscaledTime: 0
+  blinkStartAt: 10
+  blinkPeriod: 1
+  maxAlpha: 0.6
 --- !u!1 &1006153989
 GameObject:
   m_ObjectHideFlags: 0

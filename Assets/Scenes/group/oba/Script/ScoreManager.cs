@@ -4,7 +4,7 @@ using UnityEngine.SocialPlatforms.Impl;
 
 public class ScoreManager : MonoBehaviour
 {
-    private int Score { get; set; } = 0;
+    public int Score { get;private set; } = 0;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class ScoreManager : MonoBehaviour
     /// スコアの加算
     /// </summary>
     /// <param name="score"> 加算される値 </param>
-    private void AddScore(int score)
+    public void AddScore(int score)
     {
         Score += score;
     }
@@ -35,7 +35,7 @@ public class ScoreManager : MonoBehaviour
     
     private void Update()
     {
-        AddScore(1);
+        //AddScore(1);
         Debug.Log("Score:"+Score);
     }
     

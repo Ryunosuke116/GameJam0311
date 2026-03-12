@@ -5,14 +5,26 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/group/oba/Sceces/Ranking.unity
     guid: e21fce2118519c54abb529b1929de87a
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/group/oba/Sceces/Result.unity
     guid: 6fcb6b01590d0a1409134baf41b13839
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/group/oba/Sceces/Title.unity
     guid: 3f7d455f0102fec4b9e1bc117cccec1c
+  - enabled: 1
+    path: Assets/Scenes/main/Game.unity
+    guid: 05f529b3fd7785d4c8cfea1773b3ade6
+  - enabled: 1
+    path: Assets/Scenes/main/Ranking.unity
+    guid: 395ed4959724c00469a7089f62ac1b28
+  - enabled: 1
+    path: Assets/Scenes/main/Result.unity
+    guid: 606d178a629e3f947a7cf5aae80d366a
+  - enabled: 1
+    path: Assets/Scenes/main/Title.unity
+    guid: 24fb17a0725399f41aa4e9768739c409
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

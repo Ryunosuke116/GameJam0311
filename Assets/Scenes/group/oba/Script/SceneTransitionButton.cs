@@ -12,6 +12,9 @@ public class SceneTransitionButton : MonoBehaviour
 
     public GameObject scoreManagerPrefab;
 
+    private AudioSource audioSource;
+    public AudioClip startSound;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [Obsolete("Obsolete")]
     private void Start()
@@ -21,21 +24,27 @@ public class SceneTransitionButton : MonoBehaviour
         (
             DoTransition
         );
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     [Obsolete("Obsolete")]
     private void DoTransition()
     {
-        //if (sceneName == "GameScene")
+        if (sceneName == "Game")
         {
-            if (Object.FindObjectOfType<ScoreManager>() == null) Instantiate(scoreManagerPrefab, Vector3.zero, Quaternion.identity);
+            audioSource.PlayOneShot(startSound);
+
+            if (Object.FindObjectOfType<ScoreManager>() == null)
+            {
+                Instantiate(scoreManagerPrefab, Vector3.zero, Quaternion.identity);
+            }
         }
         if (sceneName != "Result")
         {
             if (Object.FindObjectOfType<ScoreManager>() != null) Destroy(Object.FindObjectOfType<ScoreManager>()); 
         }
       
-        
         SceneManager.LoadScene(sceneName);
         
     }

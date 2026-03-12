@@ -2,7 +2,7 @@ using System.Runtime.CompilerServices;
 using Unity.Hierarchy;
 using UnityEngine;
 using UnityEngine.UI;
-public class TimeLimit
+public class TimeLimit:MonoBehaviour
 {
     [Header("Refs")]
     [SerializeField] private Image overlay;
@@ -13,7 +13,7 @@ public class TimeLimit
 
     [Header("Blink Settings")]
     [SerializeField] private float blinkStartAt = 10f;
-    [SerializeField] private float blinkpPeriod = 1f;
+    [SerializeField] private float blinkPeriod = 1f;
     [SerializeField, Range(0f, 1f)] private float maxAlpha = 0.6f;
 
     private float current;
@@ -35,9 +35,18 @@ public class TimeLimit
 
         if(current <= blinkStartAt && current > 0f)
         {
-            float t = Mathf.PingPong((blinkStartAt - current) / blinkpPeriod, 1f);
+            float t = Mathf.PingPong((blinkStartAt - current) / blinkPeriod, 1f);
             float a = Mathf.Lerp(0f, maxAlpha, t);
-            
+            SetOverlayAlpha(a);
+        }
+        else
+        {
+            SetOverlayAlpha(0f);
+        }
+
+        if(current <= 0f)
+        {
+            ended = true;
         }
     }
 

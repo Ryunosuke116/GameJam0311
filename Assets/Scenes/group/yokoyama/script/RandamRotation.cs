@@ -15,6 +15,7 @@ public class RandamRotation : MonoBehaviour
         const float rotationMax = 360.0f;
         const float rotationMin = 0.0f;
 
+        // ランダムな回転角度を生成
         Vector3 rotation;
         rotation.z = Random.Range(rotationMin, rotationMax);
        transform.localEulerAngles = new Vector3(0, 0, rotation.z);
@@ -28,15 +29,17 @@ public class RandamRotation : MonoBehaviour
 
         Vector2 pos = transform.position;
 
+        // Dキーを押すとステッカーの表示/非表示を切り替える
         if (Input.GetKeyDown(KeyCode.D))
         {
             isSticker = !isSticker;
 
         }
 
+        // ステッカーの表示/非表示を切り替える
         transform.GetChild(0).gameObject.SetActive(isSticker);
 
-
+        // ステッカーが表示されている場合は、オブジェクトを上に移動させる
         if (isSticker == true)
         {
             isPasted = true;
@@ -56,4 +59,10 @@ public class RandamRotation : MonoBehaviour
 
         transform.position = pos;
     }
+
+    public bool GetIsSticker()
+    {
+        return isSticker;
+    }
+
 }

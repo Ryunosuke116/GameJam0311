@@ -1,12 +1,18 @@
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Object = UnityEngine.Object;
 
 [RequireComponent(typeof(Button))]
 public class SceneTransitionButton : MonoBehaviour
 {
     [SerializeField] private string sceneName;
+
+    public GameObject scoreManagerPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [Obsolete("Obsolete")]
     private void Start()
     {
         Debug.Log("処理の開始");
@@ -16,8 +22,19 @@ public class SceneTransitionButton : MonoBehaviour
         );
     }
 
+    [Obsolete("Obsolete")]
     private void DoTransition()
     {
+        //if (sceneName == "GameScene")
+        {
+            if (Object.FindObjectOfType<ScoreManager>() == null) Instantiate(scoreManagerPrefab, Vector3.zero, Quaternion.identity);
+        }
+        if (sceneName != "Result")
+        {
+            if (Object.FindObjectOfType<ScoreManager>() != null) Destroy(Object.FindObjectOfType<ScoreManager>()); 
+        }
+      
+        
         SceneManager.LoadScene(sceneName);
         
     }

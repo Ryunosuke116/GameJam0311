@@ -30,6 +30,7 @@ public class Score:MonoBehaviour
             {
                 ScoreManager.AddScore(15);
                 scoreMaxCount++;
+                Debug.Log("“_’Ç‰Á");
             }
             if (scoreMaxCount >= scoreCount) break;
         }

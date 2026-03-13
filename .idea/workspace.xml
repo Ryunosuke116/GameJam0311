@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f533713f-a75a-4dfd-b86a-cac9e56e47ad" name="変更" comment="" />
+    <list default="true" id="f533713f-a75a-4dfd-b86a-cac9e56e47ad" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Prefab/rankingManager.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Prefab/rankingManager.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Credit.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Credit.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/DrawDisplay.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/DrawDisplay.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/RankingData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RankingData.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Ranking.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Ranking.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Title.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/RankManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/RankManager.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,9 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="3As00C9Va4aJocEFeWWTfPGuead" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,7 +44,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "main をマージ中",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>

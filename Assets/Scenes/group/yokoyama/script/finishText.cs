@@ -5,7 +5,8 @@ public class finishTimer : MonoBehaviour
 {
 
     [SerializeField] private TMP_Text countDownText; 
-    [SerializeField] private MoveObject moveObject;  
+    [SerializeField] private MoveObject moveObject;
+    [SerializeField] private SceneTransitionButton sceneManager;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class finishTimer : MonoBehaviour
        if(moveObject.GetIsFinished())
        {
            countDownText.text = "finish!";
+            sceneManager.IsInTitle = true;
        }
        else
        {

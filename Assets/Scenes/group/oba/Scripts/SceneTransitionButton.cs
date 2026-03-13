@@ -21,6 +21,12 @@ public class SceneTransitionButton : MonoBehaviour
     bool isInResult = false;
     bool isInTitle = false;
 
+    public bool IsInTitle
+    {
+        get { return isInTitle; }
+        set { isInTitle = value; }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [Obsolete("Obsolete")]
     private void Start()

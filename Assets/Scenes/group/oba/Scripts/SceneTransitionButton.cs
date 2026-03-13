@@ -10,9 +10,6 @@ public class SceneTransitionButton : MonoBehaviour
 {
     [SerializeField] private string sceneName;
 
-    public GameObject scoreManagerPrefab;
-    public GameObject rankManagerPrefab;
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [Obsolete("Obsolete")]
     private void Start()

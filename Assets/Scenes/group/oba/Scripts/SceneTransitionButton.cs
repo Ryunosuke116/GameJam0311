@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Object = UnityEngine.Object;
-
+[DefaultExecutionOrder(-10)]
 [RequireComponent(typeof(Button))]
 public class SceneTransitionButton : MonoBehaviour
 {
@@ -120,6 +120,7 @@ public class SceneTransitionButton : MonoBehaviour
         {
             fadeOutAndIn.IsFadeOut = true;
             isInTitle = true;
+            Object.FindObjectOfType<ScoreManager>().GetComponent<ScoreManager>().ReSet();
         }
         if (sceneName == "Result")
         {

@@ -6,9 +6,9 @@ public class ScoreManager : MonoBehaviour
 {
     public int Score { get;private set; } = 0;
 
-    private void Start()
+    public void ReSet()
     {
-        Debug.Log("Score:"+Score);
+        Score = 0;
     }
 
     private void Awake()
@@ -38,5 +38,5 @@ public class ScoreManager : MonoBehaviour
         //AddScore(1);
         Debug.Log("Score:"+Score);
     }
-    
+
 }

@@ -40,7 +40,7 @@ public class SceneTransitionButton : MonoBehaviour
                 Instantiate(scoreManagerPrefab, Vector3.zero, Quaternion.identity);
             }
         }
-        if (sceneName != "Result")
+        if (sceneName == "Title")
         {
             if (Object.FindObjectOfType<ScoreManager>() != null) Destroy(Object.FindObjectOfType<ScoreManager>()); 
         }

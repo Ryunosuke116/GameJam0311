@@ -23,8 +23,8 @@ public class RandamRotation : MonoBehaviour
         const float rotationMax = 360.0f;
         const float rotationMin = 0.0f;
 
-        const float SPAWN_POS_X_MIN = -2.0f;
-        const float SPAWN_POS_X_MAX = 2.0f;
+        const float SPAWN_POS_X_MIN = -2.4f;
+        const float SPAWN_POS_X_MAX = 2.4f;
         const float SPAWN_POS_Y_MIN = -1.5f;
         const float SPAWN_POS_Y_MAX = 1.5f;
 

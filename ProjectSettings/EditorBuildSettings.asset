@@ -14,5 +14,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/group/oba/Scenes/Title.unity
     guid: 3f7d455f0102fec4b9e1bc117cccec1c
+  - enabled: 1
+    path: Assets/Scenes/group/oba/Scenes/Credit.unity
+    guid: eb796cebaee1e4e4faa90a9ebcc0b696
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

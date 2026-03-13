@@ -5,25 +5,38 @@ using UnityEngine;
 public class MoveObject : MonoBehaviour
 {
 
+    private float countDownTimer = 4f;
+    private bool isStartCountDown = true;
+    private bool isStarted = false;
+    private const float COUNT_DOWN_TIME = 4f;
+
+    private bool isFinished = false;
+
     private int stage = 0;
-    private float moveDistance = 3.5f;
+    private float moveDistance = 21.5f;
     private bool canMove=false;
     private int STAGE_MAX = 0;
-
-    const float MOVE_SPEED = -0.01f;
-    const float MOVE_DIST = -14.5f;
+    private const float MOVE_SPEED = -0.02f;
+    private const float MOVE_DIST = -18f;
 
     private checkNextStage[] NextStage;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        countDownTimer = COUNT_DOWN_TIME;
+        isStartCountDown = true;
+        isStarted = false;
+
+        isFinished = false;
+
         stage = 0;
-        moveDistance = 3.5f;
+        moveDistance = 21.5f;
         canMove = false;
 
         NextStage = gameObject.GetComponentsInChildren<checkNextStage>();
-        STAGE_MAX = gameObject.transform.childCount - 1;
+        STAGE_MAX = gameObject.transform.childCount - 2;
 
     }
 
@@ -33,6 +46,27 @@ public class MoveObject : MonoBehaviour
 
         Vector2 pos = transform.position;
         pos.y = -0.85f;
+
+        // ゲームが開始した瞬間にカウントダウンタイマーを開始する
+        if (isStartCountDown == true)
+        {
+            countDownTimer -= Time.deltaTime;
+          
+            if (countDownTimer < 0)
+            {
+                isStarted = true;
+                countDownTimer = 0f;
+                isStartCountDown = false;
+            }
+
+        }
+
+        if(isStarted == true)
+        {
+            canMove = true;
+            moveDistance += MOVE_DIST;
+            isStarted = false;
+        }
 
         // 次のステージに進むことができる場合、オブジェクトを左に移動させる
         if (stage < STAGE_MAX && canMove == false && NextStage[stage].GetIsNextStage() == true)
@@ -59,16 +93,26 @@ public class MoveObject : MonoBehaviour
             pos.x = moveDistance;
             canMove = false;
             
+        }
 
+        if(stage == STAGE_MAX && NextStage[stage].GetIsNextStage() == true)
+        {
+            isFinished = true;
         }
 
 
         transform.position = pos;
 
-        for (int i = 0; i < NextStage.Length; i++)
-        {
-            Debug.Log($"nextStage[{i}].GetIsNextStage() = {NextStage[i].GetIsNextStage()}");
-           }
+    }
+
+    public int GetCountDownTimer()
+    {
+        return (int)countDownTimer;
+    }
+
+    public bool GetIsFinished()
+    {
+        return isFinished;
     }
 
 }

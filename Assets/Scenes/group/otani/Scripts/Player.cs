@@ -25,14 +25,14 @@ public class Player : MonoBehaviour
         //左ボタンを押下している時
         if (Input.GetMouseButton(0))
         {
-            if (addAngle >= 120.0f) return;
+            if (addAngle >= 180.0f) return;
             addAngle += MoveSpeed;
 
         }
         //右ボタンを押下している時
         if (Input.GetMouseButton(1))
         {
-            if (addAngle <= -40.0f) return;
+            if (addAngle <= -180.0f) return;
             addAngle -= MoveSpeed;
 
         }

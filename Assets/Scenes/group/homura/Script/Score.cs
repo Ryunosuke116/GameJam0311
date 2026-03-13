@@ -36,6 +36,7 @@ public class Score : MonoBehaviour
                 ScoreManager.AddScore(15);
                 audioSource.PlayOneShot(seClip, 1.0f);
                 scoreMaxCount++;
+                Debug.Log("“_’Ç‰Á");
             }
             if (scoreMaxCount >= scoreCount) break;
         }

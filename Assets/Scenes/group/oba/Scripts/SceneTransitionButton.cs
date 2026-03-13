@@ -16,7 +16,6 @@ public class SceneTransitionButton : MonoBehaviour
     [Obsolete("Obsolete")]
     private void Start()
     {
-        Debug.Log("処理の開始");
         GetComponent<Button>().onClick.AddListener
         (
             DoTransition

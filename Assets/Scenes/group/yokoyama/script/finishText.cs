@@ -34,7 +34,7 @@ public class finishTimer : MonoBehaviour
             {
 
                 fontSize = FONT_SIZE_MIN;
-                sceneManager.IsInTitle = true;
+                sceneManager.IsInResult = true;
 
             }
        }

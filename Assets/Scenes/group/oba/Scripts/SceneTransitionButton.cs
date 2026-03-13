@@ -27,6 +27,12 @@ public class SceneTransitionButton : MonoBehaviour
         set { isInTitle = value; }
     }
 
+    public bool IsInResult
+    {
+        get { return isInTitle; }
+        set { isInTitle = value; }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     [Obsolete("Obsolete")]
     private void Start()
@@ -84,15 +90,16 @@ public class SceneTransitionButton : MonoBehaviour
         //リザルトシーンに移行
         if (isInResult)
         {
+            if (Object.FindObjectOfType<ScoreManager>() == null)
+            {
+                Instantiate(scoreManagerPrefab, Vector3.zero, Quaternion.identity);
+            }
+
+            isInResult = false;
+            SceneManager.LoadScene(sceneName);
+
             if (fadeOutAndIn.Alpha >= 1.0f)
             {
-                if (Object.FindObjectOfType<ScoreManager>() == null)
-                {
-                    Instantiate(scoreManagerPrefab, Vector3.zero, Quaternion.identity);
-                }
-
-                isInResult = false;
-                SceneManager.LoadScene(sceneName);
             }
 
             fadeOutAndIn.UpdateAlphaAdd();

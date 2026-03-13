@@ -23,11 +23,11 @@ public static class RectTransformExtensions
         }
 
         float angleDifference = rect2Rotation.z - rect1Rotation.z;
+        if (angleDifference < 0) angleDifference = -angleDifference;
 
         Debug.Log("Šp“x" + angleDifference);
 
-        if (angleDifference <= 30.0f ||
-            angleDifference >= 150.0f)
+        if (angleDifference <= 20.0f || angleDifference >= 150.0f)
         {
             for (var i = 0; i < 4; i++)
             {

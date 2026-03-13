@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f533713f-a75a-4dfd-b86a-cac9e56e47ad" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Prefab/rankingManager.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Prefab/rankingManager.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Credit.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Credit.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/DrawDisplay.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/DrawDisplay.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/RankingData.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RankingData.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Ranking.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Ranking.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Title.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/RankManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/RankManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/yokoyama/script/finishText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/yokoyama/script/finishText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main/Assets/Shiranui-EB SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main/Assets/Shiranui-EB SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/main/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/main/Game.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,19 +28,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main をマージ中",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main をマージ中&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="デフォルトタスク">
       <changelist id="f533713f-a75a-4dfd-b86a-cac9e56e47ad" name="変更" comment="" />

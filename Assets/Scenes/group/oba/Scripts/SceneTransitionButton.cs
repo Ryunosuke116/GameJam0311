@@ -45,7 +45,10 @@ public class SceneTransitionButton : MonoBehaviour
             //画面が暗くなったらシーン遷移する
             if (fadeOutAndIn.Alpha >= 1.0f)
             {
-                if (Object.FindObjectOfType<ScoreManager>() != null) Destroy(Object.FindObjectOfType<ScoreManager>());
+                if (Object.FindObjectOfType<ScoreManager>() != null)
+                {
+                    Destroy(Object.FindObjectOfType<ScoreManager>());
+                }
 
                 isInTitle = false;
                 SceneManager.LoadScene(sceneName);

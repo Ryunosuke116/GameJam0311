@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/group/oba/Scenes/Title.unity
     guid: 3f7d455f0102fec4b9e1bc117cccec1c
   - enabled: 1
+    path: Assets/Scenes/main/Title.unity
+    guid: 24fb17a0725399f41aa4e9768739c409
+  - enabled: 1
     path: Assets/Scenes/main/Game.unity
     guid: 05f529b3fd7785d4c8cfea1773b3ade6
   - enabled: 1
@@ -23,8 +26,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/main/Result.unity
     guid: 606d178a629e3f947a7cf5aae80d366a
-  - enabled: 1
-    path: Assets/Scenes/main/Title.unity
-    guid: 24fb17a0725399f41aa4e9768739c409
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

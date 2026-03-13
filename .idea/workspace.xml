@@ -4,26 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f533713f-a75a-4dfd-b86a-cac9e56e47ad" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/RankingData.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/RankManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Data/RankingData.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Data/RankingData.csv.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/RankingData.csv.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Sceces.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Sceces/Ranking.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Ranking.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Sceces/Ranking.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Ranking.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Sceces/Result.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Result.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Sceces/Result.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Result.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Sceces/Title.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Title.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Sceces/Title.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scenes/Title.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Script.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Script/RankManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Script/RankManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/RankManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Script/SceneTransitionButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/SceneTransitionButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Script/SceneTransitionButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/SceneTransitionButton.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Script/ScoreManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/ScoreManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/group/oba/Script/ScoreManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/group/oba/Scripts/ScoreManager.cs.meta" afterDir="false" />
-    </list>
+    <list default="true" id="f533713f-a75a-4dfd-b86a-cac9e56e47ad" name="変更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +33,7 @@
     "RunOnceActivity.readMode.enableVisualFormatting": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main をマージ中",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true"
   }
 }]]></component>

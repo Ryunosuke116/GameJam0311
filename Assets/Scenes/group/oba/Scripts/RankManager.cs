@@ -20,6 +20,9 @@ public class RankManager : MonoBehaviour
     
     void Awake()
     {
+        // このオブジェクトはシーン切り替えでも破棄しない
+        DontDestroyOnLoad(gameObject);
+        
         // 1. ResourcesからCSVを読み込み (拡張子.csvは不要)
         // ※Resourcesにランキングデータを入れていないと動かない
         var csvFile = Resources.Load<TextAsset>($"RankingData");
